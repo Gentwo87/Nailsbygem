@@ -1,64 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Nails by Gem</title>
-<style>
-body{
-font-family: Arial;
-text-align:center;
-background:#f6e6ff;
-margin:0;
-}
-
-header{
-background:#b57edc;
-color:white;
-padding:40px;
-}
-
-button{
-background:#6a0dad;
-color:white;
-border:none;
-padding:15px 30px;
-font-size:18px;
-border-radius:8px;
-cursor:pointer;
-}
-
-.gallery img{
-width:200px;
-margin:10px;
-border-radius:10px;
-}
-
-footer{
-margin-top:40px;
-padding:20px;
-background:#eee;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nails by Gem</title>
+  <meta name="description" content="Luxury gel nails, BIAB, Gel Duo, nail art. Book your appointment with Nails by Gem."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Elegant serif + clean sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
+  <div class="bg"></div>
 
-<header>
-<h1>Nails by Gem</h1>
-<p>Luxury Gel Nails</p>
-<button>Book Appointment</button>
-</header>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Nails by Gem home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Nails by Gem</span>
+      </a>
 
-<h2>Recent Sets</h2>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a class="nav__cta" href="#book">Book</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371">
-<img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b">
-<img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66">
-</div>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <img class="hero__logo" src="assets/logo.png" alt="Nails by Gem logo" />
 
-<footer>
-<p>Follow us on Instagram @nailsbygem</p>
-</footer>
+        <h1 class="hero__title">Luxury Gel Nails in <span class="muted">[Your Area]</span></h1>
+        <p class="hero__sub">BIAB • Gel Duo • Nail Art • Short &amp; Sweet or Full Glam</p>
 
+        <div class="hero__buttons">
+          <a class="btn btn--primary" href="#book">Book Appointment</a>
+          <a class="btn btn--ghost" href="#gallery">View Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about">
+      <div class="container card about__card">
+        <div class="about__media">
+          <img src="assets/gem.jpg" alt="Gem - Nail Tech" onerror="this.src='https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80';"/>
+        </div>
+
+        <div class="about__content">
+          <h2 class="section__title">Hi, I’m Gem 👋</h2>
+          <p class="section__text">
+            Certified nail tech creating beautiful, long-lasting gel nails.
+            I specialise in <strong>BIAB</strong>, <strong>Gel Duo</strong>, and <strong>custom nail art</strong> —
+            from simple &amp; chic to full glam.
+          </p>
+
+          <div class="badges">
+            <div class="badge">
+              <span class="badge__icon">🧼</span>
+              <div>
+                <div class="badge__title">Clean &amp; Sterile Tools</div>
+                <div class="badge__text">Hygiene first, always.</div>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="badge__icon">✨</span>
+              <div>
+                <div class="badge__title">Long-Lasting Sets</div>
+                <div class="badge__text">Strong, glossy, neat.</div>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="badge__icon">🕯️</span>
+              <div>
+                <div class="badge__title">Friendly Studio</div>
+                <div class="badge__text">Relaxing &amp; welcoming.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">My Services</h2>
+          <p class="section__kicker">Nudes • French • Glitter • Art</p>
+        </div>
+
+        <div class="grid services">
+          <article class="service card">
+            <img src="assets/gallery1.jpg" alt="BIAB / Builder Gel" onerror="this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80';"/>
+            <div class="service__body">
+              <h3>BIAB / Builder Gel</h3>
+              <p class="price">From £XX</p>
+              <a class="btn btn--mini" href="#book">Book</a>
+            </div>
+          </article>
+
+          <article class="service card">
+            <img src="assets/gallery2.jpg" alt="Gel Duo" onerror="this.src='https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80';"/>
+            <div class="service__body">
+              <h3>Gel Duo</h3>
+              <p class="price">From £XX</p>
+              <a class="btn btn--mini" href="#book">Book</a>
+            </div>
+          </article>
+
+          <article class="service card">
+            <img src="assets/gallery3.jpg" alt="Gel Polish" onerror="this.src='https://images.unsplash.com/photo-1610992015732-2449b0dd6a98?auto=format&fit=crop&w=900&q=80';"/>
+            <div class="service__body">
+              <h3>Gel Polish</h3>
+              <p class="price">From £XX</p>
+              <a class="btn btn--mini" href="#book">Book</a>
+            </div>
+          </article>
+
+          <article class="service card">
+            <img src="assets/gallery4.jpg" alt="Nail Art" onerror="this.src='https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=80';"/>
+            <div class="service__body">
+              <h3>Nail Art</h3>
+              <p class="price">From £XX</p>
+              <a class="btn btn--mini" href="#book">Book</a>
+            </div>
+          </article>
+
+          <article class="service card">
+            <img src="assets/gallery5.jpg" alt="Infill" onerror="this.src='https://images.unsplash.com/photo-1621976360623-0042230d6f4f?auto=format&fit=crop&w=900&q=80';"/>
+            <div class="service__body">
+              <h3>Infill</h3>
+              <p class="price">From £XX</p>
+              <a class="btn btn--mini" href="#book">Book</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center">
+          <a class="btn btn--primary" href="https://instagram.com/" target="_blank" rel="noreferrer">See more on Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Gallery</h2>
+          <p class="section__kicker">Tap a photo to view</p>
+        </div>
+
+        <div class="grid gallery">
+          <button class="gallery__item" data-img="assets/gallery1.jpg"><img src="assets/gallery1.jpg" alt="Nail set 1"></button>
+          <button class="gallery__item" data-img="assets/gallery2.jpg"><img src="assets/gallery2.jpg" alt="Nail set 2"></button>
+          <button class="gallery__item" data-img="assets/gallery3.jpg"><img src="assets/gallery3.jpg" alt="Nail set 3"></button>
+          <button class="gallery__item" data-img="assets/gallery4.jpg"><img src="assets/gallery4.jpg" alt="Nail set 4"></button>
+          <button class="gallery__item" data-img="assets/gallery5.jpg"><img src="assets/gallery5.jpg" alt="Nail set 5"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS + BOOK -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Ready for your set?</h2>
+        </div>
+
+        <div class="reviews">
+          <div class="review card">
+            <div class="stars">★★★★★</div>
+            <p>“Amazing nails, lasted 4 weeks.”</p>
+          </div>
+          <div class="book card" id="book">
+            <h3>Book Now</h3>
+            <p class="muted">Fastest booking is WhatsApp or Instagram DM.</p>
+            <div class="book__buttons">
+              <a class="btn btn--primary" href="https://wa.me/44XXXXXXXXXX" target="_blank" rel="noreferrer">WhatsApp Booking</a>
+              <a class="btn btn--ghost" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram DM</a>
+            </div>
+            <p class="tiny muted">Replace the WhatsApp number + Instagram link in the code.</p>
+          </div>
+          <div class="review card">
+            <div class="stars">★★★★★</div>
+            <p>“Super clean and long-lasting.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--tight">
+      <div class="container footer card">
+        <div class="footer__grid">
+          <div>
+            <h3>Nails by Gem</h3>
+            <p class="muted">Luxury gel nails • BIAB • Gel Duo • Nail Art</p>
+          </div>
+
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>Instagram: <a href="https://instagram.com/" target="_blank" rel="noreferrer">@nailsbygem</a></li>
+              <li>WhatsApp: <a href="https://wa.me/44XXXXXXXXXX" target="_blank" rel="noreferrer">Message to book</a></li>
+              <li>Email: <a href="mailto:nailsbygem@email.com">nailsbygem@email.com</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Location</h4>
+            <p class="muted">[Your Area], UK</p>
+            <p class="tiny muted">Add your postcode/area once you’re ready.</p>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span class="tiny muted">© <span id="year"></span> Nails by Gem</span>
+          <a class="tiny" href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple image modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal__close" id="modalClose" aria-label="Close">×</button>
+    <img class="modal__img" id="modalImg" alt="Gallery image">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
